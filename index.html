@@ -37,6 +37,11 @@
 					<img src="images/slider/slider6.png" alt="" />
 				</div>
 			</div>
+			<script type="text/javascript">
+				$(window).load(function() {
+					$('#slider').nivoSlider({pauseTime: 6000,});
+				});
+			</script>
 			
 			<section>
         <br>
@@ -96,13 +101,6 @@
         	</div>
 			</section>				
 			<footer>
-				<script>
-					$.getJSON("https://api.ipify.org?format=json", 
-                        function(data) { 
-							var ip = data.ip
-							console.log(ip)
-							})
-				</script>
 				<p>Copyright &copy 2020 Kshitij Chitnis. All Rights Reserved.</p> 
 			</footer>
 		</div>			
