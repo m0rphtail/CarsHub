@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/default/default.css" type="text/css" media="screen" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+		<script src="jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+        <title>CarsHub | Home</title>
+      </head>
+	<body id="home">
+		<div id="wrapper">
+		
+			<header>
+				<div id="logo">
+					<img src="/images/logo.png" height="60">
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html" id="homenav">Home</a></li>
+						<li><a href="blog.html" id="blognav">Blog</a></li>
+						<li><a href="gallery.html" id="fullwidthnav">gallery</a></li>
+						<li><a href="contact.html">contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			
+			<div class="slider-wrapper theme-default">
+				<div id="slider" class="nivoSlider">
+					<img src="images/slider/slider1.png" alt="" />
+					<img src="images/slider/slider2.png" alt="" />
+					<img src="images/slider/slider3.png" alt="" />
+					<img src="images/slider/slider4.png" alt="" />
+					<img src="images/slider/slider5.png" alt="" />
+					<img src="images/slider/slider6.png" alt="" />
+				</div>
+			</div>
+			<script type="text/javascript">
+			$(window).load(function() {
+				$('#slider').nivoSlider({pauseTime: 6000,});
+			});
+			</script>
+			
+			<section>
+        <br>
+				<div id="sline">
+					<div class="sdline"></div>
+					<h1>Latest Blogs</h1>
+					<div class="sdline"></div>
+				</div>
+				<div id="latestp">
+					<article>
+						<h1>Bentley Bentayga</h1>
+						<img src="images/blogs/Bentayga-Speed-1.jpg" height="110" alt="" />
+						<p>The updated 2021 Bentley Bentayga didn’t have to wait long to gain its Speed variant back. We’re less than a month removed...</p>
+						<a href="blogs/post1.html" class="rm">Read More</a>
+					</article>
+					<article>
+						<h1>Ford F-150</h1>
+						<img src="images/blogs/All-new_F-150_001.jpg" height="110" alt="" />
+						<p>A couple weeks back, CarsDirect reported on pricing at the bottom and top ends for the 2021 Ford F-150, based on very early...</p>
+						<a href="blogs/post2.html" class="rm">Read More</a>
+					</article>
+					<article>
+						<h1>Genesis G80</h1>
+						<img src="images/blogs/2021-Genesis-G80-front-three-quarter-2.jpg" height="110" alt="" />
+						<p>Luxury sedans certainly aren't what they used to be in the automotive pantheon, largely supplanted in the buying public's...</p>
+						<a href="blogs/post3.html" class="rm">Read More</a>
+					</article>
+					<article class="lastarticle">
+						<h1>Audi S3</h1>
+						<img src="images/blogs/2022-audi-s3-sedan-12.jpg" height="110" alt="" />
+						<p>Audi continued its model offensive by introducing the European-spec version of the next-generation S3. Unveiled online, it...</p>
+						<a href="blogs/post4.html" class="rm">Read More</a>
+					</article>
+				</div>
+		<br>
+				<div id="line">
+					<div class="dline"></div>
+					<h1 class="heading">Gallery</h1>
+					<div class="dline"></div>
+				</div>
+				<div id="ourserv">
+					<article>
+						<h1>Dodge Durango SRT Hellcat</h1>
+						<img src="images/gallery/dodge/DG021_001DUjk6pvhn4d6edltdjeknf18jmfk.jpg" height="150" alt="" />
+						<a href="gallery/gallery1.html" class="rm">View More</a>
+					</article>
+					<article>
+						<h1>Chevrolet Corvette Stingray</h1>
+						<img src="images/gallery/corvette/2020-corvette-stingray-f34-1.jpg" height="150" alt="" />
+						<a href="gallery/gallery2.html" class="rm">View More</a>
+					</article>
+					<article class="lastarticle">
+						<h1>Lucid Air</h1>
+						<img src="images/gallery/lucid/01-lucid-air-ny-1.jpg" height="150" alt="" />
+						<a href="gallery/gallery3.html" class="rm">View More</a>
+					</article>
+        	</div>
+			</section>				
+			<footer>
+				<script>
+					$.getJSON("https://api.ipify.org?format=json", 
+                        function(data) { 
+							var ip = data.ip
+							console.log(ip)
+							})
+				</script>
+				<p>Copyright &copy 2020 Kshitij Chitnis. All Rights Reserved.</p> 
+			</footer>
+		</div>			
+	</body>
+</html>
+		
+		
+			
+    
+    
