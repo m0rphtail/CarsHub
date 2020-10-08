@@ -107,6 +107,70 @@ body{
 	letter-spacing: 2px;
 }
 
+#header_wrapper{
+	width: 950px;
+	margin: 16px auto;
+	background-color: #121212;
+	padding: 20px 20px;
+	box-shadow: 0 4px 6px #000;
+}
+
+body{
+	background: url('../images/bg.png') repeat;
+	font-family: Source, Tahoma, sans-serif;
+	color: #fff;
+	font-size: 14px;
+	text-shadow: 1px 1px 0px #000;
+}
+#srt{
+	color: #f9f9f9;
+	display: block;
+	float: right;
+	position: absolute;
+	top: 14px;
+	left: 180px;
+	text-shadow: 1px 1px 0px #000;
+	font-size: 36px;
+	font-style: italic;
+	font-family: ethno, sans-serif;
+	font-weight: normal;
+}
+#ii{
+	font-size: 60px;
+	font-family: LeagueGothic, sans-serif;
+	font-weight: bold;
+	position: absolute;
+	left: 169px;
+	top: -3px;
+	color: #FFA931;
+	display: block;
+	float: right;
+	text-shadow: none;
+	font-style: italic;
+	letter-spacing: 2px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+}
+  
+.page-wrap, .header-wrap { 
+	width: 90%; 
+	min-width: 320px; 
+	max-width: 640px; 
+	/* center on page */
+	margin: 0 auto; 
+	/* separate content from window edge -- 
+	   here (not on body) to work with fixed header */
+	padding: 0 10px;}
+
+.sticky + .content {
+	padding-top: 102px;
+  }
+
 /************* L O G O   &  N A V   B A R    S T Y L E ****************/
 header h1{
 	font-family: LeagueGothic, Impact, sans-serif;
