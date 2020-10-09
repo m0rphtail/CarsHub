@@ -115,6 +115,10 @@ body{
 	box-shadow: 0 4px 6px #000;
 }
 
+#header_wrapper.sticky {
+	margin: 0 auto 16px auto;
+}
+
 body{
 	background: url('../images/bg.png') repeat;
 	font-family: Source, Tahoma, sans-serif;
@@ -153,8 +157,11 @@ body{
 .sticky {
 	position: fixed;
 	top: 0;
-	z-index: 1;
-	width: 100%;
+	z-index: 9999;
+	align-self: center;
+	left: 50%;
+	transform: translate(-50%, 0);
+	/* transition: 0.3s ease-in; */
 }
   
 .page-wrap, .header-wrap { 
