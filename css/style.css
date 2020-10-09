@@ -161,17 +161,13 @@ body{
 	align-self: center;
 	left: 50%;
 	transform: translate(-50%, 0);
-	/* transition: 0.3s ease-in; */
 }
   
 .page-wrap, .header-wrap { 
 	width: 90%; 
 	min-width: 320px; 
 	max-width: 640px; 
-	/* center on page */
 	margin: 0 auto; 
-	/* separate content from window edge -- 
-	   here (not on body) to work with fixed header */
 	padding: 0 10px;}
 
 .sticky + .content {

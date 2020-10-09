@@ -12,7 +12,7 @@
         <title>CarsHub | Gallery</title>
     </head>
 	<body id="fullwidth">
-		<div id="wrapper">
+		<div id="header_wrapper">
 		
 			<header>
 				<div id="logo">
@@ -27,7 +27,9 @@
 					</ul>
 				</nav>
 			</header>
-			
+		</div>
+		<div id="wrapper">
+
             <a href="../gallery.html" class="left rm-2">&lt; Go Back</a><br>
             <br>
             <h1><a>Lucid Air</a></h1>
@@ -42,7 +44,19 @@
 			<footer>
 				<p>Copyright &copy 2020 Kshitij Chitnis. All Rights Reserved.</p> 
 			</footer>
-		</div>			
+		</div>	
+		<script>
+			window.onscroll = function() {myFunction()};
+				var header = document.getElementById("header_wrapper");
+				var sticky = header.offsetTop;
+				function myFunction() {
+				if (window.pageYOffset > sticky) {
+					header.classList.add("sticky");
+				} else {
+					header.classList.remove("sticky");
+				}
+			}
+		</script>		
 	</body>
 </html>
 		
